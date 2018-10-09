@@ -60,5 +60,14 @@ li a:hover {
 
 article {
   width: 67%;
+  min-width: 200px;
+  max-width: 500px; 
 }
+
+img{
+  min-height: 150px;
+}
+
+
+
 
