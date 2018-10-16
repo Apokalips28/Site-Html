@@ -68,3 +68,29 @@ footer{
 .reseaux{
   height: 30px;
 }
+
+
+
+/* Menu déroulant "join" */
+
+
+
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+nav > ul > li{
+  float: left;
+}
+
+
+nav li{
+  list-style-type: none;
+}
+
+
+.submenu{
+  display: none;
+}
