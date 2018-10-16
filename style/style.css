@@ -57,12 +57,7 @@ li a:hover {
 .reseaux{
   height: 30px;
 }
-
-article {
-  width: 67%;
-  min-width: 200px;
-  max-width: 500px; 
+article{
+  margin: 40px auto;
+  width: 50%;
 }
-
-
-
