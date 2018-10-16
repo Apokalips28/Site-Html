@@ -25,7 +25,25 @@
                 <p><label for="nom">Votre nom</label> : <input type="text" name="nom" id="nom"  placeholder="Ex : Dupont" size="30"></p>
                 <p><label for="email">Votre e-mail</label> : <input type="email" name="email" id="email"  placeholder="Ex : jean.dupont@exemple.com"></p>
                 <p><label for="tel">Votre numéro de téléphone</label> : <input type="tel" name="tel" id="tel"  placeholder="Ex : 06 01 02 03 04"></p>
-                <p> Adresse, pays avec menu défilant optgroup, radio pour comment avez vous entendu parlez de nous</p>
+                <p><label for="adresse">Votre adresse</label> : <input type="text" name="adresse" id="adresse"  placeholder="Ex : 99 Rue de Rivoli"></p>
+                <p><label for="pays">Votre pays</label> : <select type name="pays" id="pays">
+           		<optgroup label="Europe">
+               		<option value="france">France</option>
+               		<option value="espagne">Espagne</option>
+               		<option value="italie">Italie</option>
+              		<option value="royaume-uni">Royaume-Uni</option>
+           		</optgroup>
+           		<optgroup label="Amérique">
+               		<option value="canada">Canada</option>
+               		<option value="etats-unis">Etats-Unis</option>
+           		</optgroup>
+           		<optgroup label="Asie">
+               		<option value="chine">Chine</option>
+               		<option value="japon">Japon</option>
+           		</optgroup>
+       			</select>
+                </optgroup></p>
+                <p> pays avec menu défilant optgroup, radio pour comment avez vous entendu parlez de nous</p>
                 <p><label for="message">Votre message</label> <br> <textarea name="message" id="message"  placeholder="Je souhaietrais vous soumettre une proposition de collaboration avec mon entreprise..."></textarea></p>
 
                 <input type="submit" name="send">
