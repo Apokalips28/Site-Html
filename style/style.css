@@ -4,6 +4,7 @@ html{
 }
 body{
   padding: 0;
+  margin: 0;
   width: 100%;
   margin: auto;
 }
@@ -21,7 +22,6 @@ ul {
   list-style-type: none;
   margin: auto;
   padding: 0;
-  overflow: hidden;
   background-color: white;
   
 }
@@ -81,16 +81,52 @@ nav > ul{
 }
 
 
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+
 nav > ul > li{
   float: left;
+  position: relative;
 }
+
+
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: #222222;
+}
+
 
 
 nav li{
   list-style-type: none;
 }
 
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+}
+ 
+.submenu li a{
+  padding: 15px 5px;
+  color: #222538;
+  width: 145px;
+}
+
 
 .submenu{
   display: none;
 }
+
