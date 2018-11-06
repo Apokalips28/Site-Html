@@ -1,7 +1,17 @@
+* {
+	box-sizing: content-box;
+}
+
+p{
+	margin: 0;
+	padding-bottom: 20px; //A MOD
+}
+
 html{
   margin: 0;
   padding: 0;
 }
+
 body{
   padding: 0;
   margin: 0;
@@ -16,13 +26,15 @@ nav {
   top:0;
   width: 100%;
   border-bottom: 1px solid #EEEEEE;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
   list-style-type: none;
-  margin: auto;
   padding: 0;
   background-color: white;
+  width: 100%;
   
 }
 
@@ -45,6 +57,7 @@ li a:hover {
 
 article{
   margin: 40px auto;
+  margin-bottom: 0;
   width: 50%;
 
 }
@@ -111,22 +124,25 @@ nav li{
 }
 
 nav li:hover .submenu{
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   position: absolute;
   top: 100%;
   left: 0px;
   padding: 0px;
   z-index: 100000;
 }
- 
+
 .submenu li a{
-  padding: 15px 5px;
+  padding: 15px 0px;
   color: #222538;
-  width: 145px;
+  width: 100%;
 }
 
 
 .submenu{
+  width: 100%;
   display: none;
 }
 
