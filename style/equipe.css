@@ -2,6 +2,7 @@
   height: 200px;
   margin: 10Px;
 }
-article{
+
+article {
   display: flex;
 }
