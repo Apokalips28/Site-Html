@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{
 p{
   font-family: "Sources Sans Pro", sans-serif;
 	margin: 0;
-	padding-bottom: 20px; //A MOD
+  padding-bottom: 20px; //A MOD
 }
 
 html{
@@ -33,6 +33,7 @@ body{
   padding: 0;
   margin: 0;
   margin: auto;
+  background-color:#F5F5F5;
 }
 
 /* Css Menu */
@@ -61,7 +62,7 @@ li {
 
 li a {
   display: block;
-  color: #222222;
+  color: #707070;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -73,16 +74,17 @@ li a:hover {
 }
 
 article{
+  background-color: #FFF;
   margin: 40px auto;
   margin-bottom: 0;
-  width: 70%;
+  width: 60%;
+  box-shadow: 0px 3px 8px rgba(112, 112, 112, 0.3); 
+  }
 
 }
 main{
   width: 80%;
   margin: 0 auto;
-  padding-top: 80px;
-  background-color:#F9F8F6;
 }
 
 /* Footer */
@@ -94,6 +96,7 @@ footer{
   text-align: center;
   color: #FFF;
   background-color: #409291;
+
 }
 
 .reseaux{
