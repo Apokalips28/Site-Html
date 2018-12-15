@@ -1,7 +1,17 @@
-.imgequipe{
-  height: 200px;
+@media screen and (min-width:768px){
+  article{
+    display: flex;
+  }
+  .imgequipe{
+    height: 200px;
+  }
 }
 
-article {
-  display: flex;
+
+
+@media screen and (max-width:768px){
+ .imgequipe{
+   height: 200px;
+ }
+
 }
