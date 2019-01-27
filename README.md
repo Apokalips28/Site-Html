@@ -1,4 +1,5 @@
 # Site-Html
 Html Print'Food
-Faitent git commit -am "Nom du commit " pour faire le add et le commit en meme temps.
- 
+
+Projet de conception Semestre 1 IUT informatique de Montpellier 2018/2019.
+Fait par Maxime Derksen, Théophile Grégoire et Simon Moulin.
