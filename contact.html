@@ -1,32 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Print'Food</title>
         <link rel="stylesheet" href="style/style.css" type="text/css">
+        <link rel="stylesheet" href="style/contact.css" type="text/css">
     </head>
     <body>
     <header>
+        <div class="menu">
+            <span class="title">Print'Food</span>
+            <input class="burger" type="checkbox">
             <nav>
-            	<ul>
-            		<li><a href="index.html">Produits</a></li>
-            		<li><a href="contact.html">Contact</a></li>
-            		<li><a href="equipe.html">Equipe</a></li>
-            		<li><a href="presse.html">Presse</a></li>
-            		<li><a href="join.html">Nous rejoindre</a>
+              <ul>
+                    <li id="item1"><a href="index.html" > <img id="logo" alt="logo printfood" src="./images/Logo3.svg"></a></li>
+                <li><a href="index.html">Produits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="presse.html">Presse</a>
+                
+
+
+                    <li><a href="join.html">Nous rejoindre</a>
+                   
                         <ul class="submenu">
-                            <li><a href="./metier1.html">Métier 1</a></li>
-                            <li><a href="./metier2.html">Métier 2</a></li>
-                            <li><a href="./metier3.html">Métier 3</a></li>
-                            <li><a href="./metier4.html">Métier 4</a></li>
+                            <li><a href="./metier1.html">Cuisinier</a></li>
+                            <li><a href="./metier2.html">Développeur</a></li>
+                            <li><a href="./metier3.html">Web Designer</a></li>
+                            <li><a href="./metier4.html">Technicien</a></li>
                         </ul>
-                </li>
-            		<li><a href="faq.html">FAQ</a></li>
-            	</ul>
+                    </li>
+            
+
+
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
             </nav>
+        </div>
         </header>
+         <div class="main">
         <main>
             <article>
+            <h2>Formulaire de contact :</h2>
             <form method="post" action="traitementprint'food.php">
                 <p><label for="prenom">Votre prénom</label> : <input type="text" name="prenom" id="prenom"  placeholder="Ex : Jean" size="30"></p>
                 <p><label for="nom">Votre nom</label> : <input type="text" name="nom" id="nom"  placeholder="Ex : Dupont" size="30"></p>
@@ -34,7 +49,7 @@
                 <p><label for="tel">Votre numéro de téléphone</label> : <input type="tel" name="tel" id="tel"  placeholder="Ex : 06 01 02 03 04"></p>
                 <p><label for="adresse">Votre adresse</label> : <input type="text" name="adresse" id="adresse"  placeholder="Ex : 99 Rue de Rivoli"></p>
                 <p><label for="cp">Votre Code postal</label> : <input type="text" name="cp" id="cp"  placeholder="Ex : 34070"></p>
-                <p><label for="pays">Votre pays</label> : <select type name="pays" id="pays">
+                <p><label for="pays">Votre pays</label> : <select name="pays" id="pays">
            		<optgroup label="Europe">
                		<option value="france">France</option>
                		<option value="espagne">Espagne</option>
@@ -50,25 +65,25 @@
                		<option value="japon">Japon</option>
            		</optgroup>
            		<option value="autre">Autre</option>
-       			</select>
-                </optgroup></p>
-                <p><label for="comment">Par quel moyen vous avez nous connue</label> : </p>
+       			</select></p>
+                <p><label>Par quel moyen vous avez nous connue</label> : </p>
                 <p><input type="radio" id="commentChoix1" name="comment" value="Internet">
-                <label for="commentChoix2">Internet</label></p>
-                <p><input type="radio" id="commentChoix3" name="comment" value="Radio">
-                <label for="commentChoix3">Radio</label></p>
-                <p><input type="radio" id="commentChoix4" name="comment" value="Bouche">
-                <label for="commentChoix4">Bouche à oreille</label></p>
-                <p><input type="radio" id="commentChoix5" name="comment" value="reseauxsociaux">
-                <label for="commentChoix5">Réseaux sociaux</label></p>
+                <label for="commentChoix1">Internet</label></p>
+                <p><input type="radio" id="commentChoix2" name="comment" value="Radio">
+                <label for="commentChoix2">Radio</label></p>
+                <p><input type="radio" id="commentChoix3" name="comment" value="Bouche">
+                <label for="commentChoix3">Bouche à oreille</label></p>
+                <p><input type="radio" id="commentChoix4" name="comment" value="reseauxsociaux">
+                <label for="commentChoix4">Réseaux sociaux</label></p>
                 <p><label for="message">Votre message</label> <br> <textarea name="message" id="message"  placeholder="Dites nous tout..."></textarea></p>
 
                 <p><label for="datecontact">Insérer la date et l'heure à laquelle vous souhaitez être recontacté(e) par nos professionels</label> : <input type="datetime-local" name="datecontact" id="datecontact" ></p>
-
-                <input type="submit" name="send">
+                <div id="boutonenvoyer"><input type="submit" name="send"></div>
+                
             </form>
             </article>
         </main>
+      </div>
         <footer>
             <h2>Print'Food</h2>
             <img src="images/facebook.jpeg" alt="logo facebook" class="reseaux">

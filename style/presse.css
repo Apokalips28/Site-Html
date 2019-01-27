@@ -9,9 +9,12 @@
   
 
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:769px){
+    article{
+      text-align: center;
+    }
    .imgpresse{
-     height: 200px;
+     height: 150px;
    }
 
   }

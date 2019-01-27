@@ -6,19 +6,25 @@
 	font-family: "Sources Sans Pro";
 	src: url('../Polices/SourceSansPro-Regular.ttf');
 }
+        /* Style de Base */
 
 * {
   box-sizing: content-box;
 }
 
 main{
-  margin: 100px;
-  width: 80%;
+  display: flex;
+  flex-direction : column;
   
 }
-.banniere{
-  width: 100%;
+
+.main {
+  display: flex;
+  flex-direction : column;
+  align-items:center;
+  margin-bottom: 50px;
 }
+
 h1,h2,h3,h4,h5,h6{
   font-family: "Libre Basker Ville", serif;
   padding: 20px;
@@ -44,52 +50,17 @@ body{
   background-color:#F5F5F5;
 }
 
-/* Css Menu */
-
-nav {
-  font-family: "Libre Basker Ville", sans-serif;
-  position: fixed;
-  top:0;
-  width: 100%;
-  border-bottom: 1px solid #EEEEEE;
-  display: flex;
-  justify-content: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  background-color: white;
-  width: 100%;
-  
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #707070;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-bottom: 4px solid white;
-}
-
-li a:hover {
-  border-bottom: 4px solid #409291;
-}
-
 article{
   background-color: #FFF;
   margin: 40px auto;
   margin-bottom: 0;
   width: 80%;
   box-shadow: 0px 10px 10px rgba(112, 112, 112, 0.3); 
-  }
+}
 
-/* Footer */
+
+
+          /* Footer */
 
 footer{
   bottom: 0;
@@ -105,45 +76,139 @@ footer{
   height: 30px;
 }
 
+       /*Css Format telephone*/
+@media (max-width: 768px){
+/* Caché menu version ordi */
+.submenu{
+  display: none;
+}
+#item1{
+  display: none;
+}
+ul{
+  list-style-type: none;
+}
+/* Menu version telephone */
+.menu
+{
+  background:#409291;
+  color:#fff;
+  height:80px;
+  position:relative;
+}
 
+.menu .title
+{
+  font-size:60px;
+  font-weight:bold;
+  line-height:50px;
+  padding:10px 20px;
+}
+.menu nav a{
+  text-decoration: none;
+  color : #fff;
+}
+.menu nav
+{
+  background:inherit;
+  font-size:60px;
+  height:0;
+  overflow:hidden;
+  transition:height .2s;
+}
 
-/* Menu déroulant "join" */
+.menu nav > *
+{
+  display:block;
+  line-height:2;
+  padding:0 20px;
+  width:100%;
+}
 
+.menu .burger
+{
+  
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  cursor:pointer;
+  font-size:70px;
+  line-height:50px;
+  position:absolute;
+  text-align:center;
+  top:0;
+  right:10px;
+  width:50px; 
+}
 
+.menu .burger:before
+{
+  content: url(./../images/close.svg);
+}
 
-nav > ul{
-  margin: 0px;
-  padding: 0px;
+.menu .burger:checked:before
+{
+  content: url(./../images/menu.svg);
+}
+.menu .burger:checked + nav
+{
+  height:calc(100vh - 80px);
+}
+
+}
+      /* Css version ordinateur */
+@media screen and (min-width : 769px){
+  /* Caché menu version mobile */
+  .title, .burger{
+    display: none;
+  }
+  main{
+    margin-top: 100px;
+    width: 80%;
+  }
+  /* Menu version ordinateur */
+
+  nav {
+  font-family: "Libre Basker Ville", sans-serif;
+  position: fixed;
+  display: inline-flex;
+  top:0;
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+  justify-content: center;
+  background-color: white;
 }
 
 
-nav > ul::after{
-  content: "";
+#logo{
+  width:100%;
+  height:35px;
+}
+
+ul {
+  display : inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin : 0;
+}
+
+li a {
   display: block;
-  clear: both;
-}
-
-nav a{
-  display: inline-block;
+  color: #707070;
+  text-align: center;
   text-decoration: none;
 }
 
-
-nav > ul > li{
-  float: left;
-  position: relative;
+li{
+  border-bottom: 4px solid white;
 }
 
-
-nav > ul > li > a{
-  padding: 20px 30px;
-  color: #222222;
+li:hover {
+  border-bottom: 4px solid #409291;
 }
 
-
-
-nav li{
-  list-style-type: none;
+#item1:hover {
+  border-bottom: 4px solid #fff;
 }
 
 nav li:hover .submenu{
@@ -152,26 +217,34 @@ nav li:hover .submenu{
   align-content: center;
   position: absolute;
   top: 100%;
-  left: 0px;
-  padding: 0px;
-  z-index: 100000;
 }
 
 .submenu li a{
   padding: 15px 0px;
-  color: #222538;
   width: 100%;
+  color : black;
 }
 
 
-.submenu{
+.submenu{ 
   width: 100%;
   display: none;
+  background-color: white;
+}
+
+nav > ul > li{ /* Style des elements de la navbar */
+  position: relative;
 }
 
 
-@media(max-witdh:768){
-  article{
-    width: 100%;
-  }
+nav > ul > li > a{ /* Style des liens de la navbar */
+  padding: 20px 30px 0px 30px;
+  color : black;
+
+}
+
+#item1 { /* Logo de la navbar */
+  padding: 0px 30px 0px 30px;
+}
+
 }

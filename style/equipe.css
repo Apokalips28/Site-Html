@@ -1,17 +1,18 @@
-@media screen and (min-width:768px){
-  article{
-    display: flex;
+@media (min-width:768px){
+    article{
+      display: flex;
+    }
+    .imgequipe{
+      height: 200px;
+    }
   }
-  .imgequipe{
-    height: 200px;
+  
+@media (max-width:769px){
+	article{
+		text-align: center;
+	}
+   .imgequipe{
+     height: 200px;
+   }
+
   }
-}
-
-
-
-@media screen and (max-width:768px){
- .imgequipe{
-   height: 200px;
- }
-
-}

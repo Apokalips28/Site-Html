@@ -1,0 +1,7 @@
+h3 > a{
+	text-decoration: none;
+	color : black;
+}
+h3 > a:hover{
+	color : #409291;;
+}
